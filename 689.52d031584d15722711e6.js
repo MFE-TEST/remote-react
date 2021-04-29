@@ -1,2 +1,0 @@
-(self.webpackChunkreact_dash=self.webpackChunkreact_dash||[]).push([[689],{689:(e,t,n)=>{"use strict";n.r(t),n.d(t,{mount:()=>s});var a=n(294),r=n(935);const c=function(){return a.createElement("h2",null,"My Remote Dashboard")};var u=document.getElementById("_react_dash");function s(e){r.render(a.createElement(c,null),e)}u&&s(u)}}]);
-//# sourceMappingURL=689.52d031584d15722711e6.js.map
