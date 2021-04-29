@@ -2,7 +2,7 @@ import React from 'react';
 
 function App() {
   return (<h2>
-    My Remote Dashboard
+    My Remote Dashboard (UPDATE)
   </h2>);
 }
 
