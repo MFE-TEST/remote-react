@@ -1,20 +1,9 @@
-import React, { useEffect } from 'react';
-import { Switch, Route, useHistory } from 'react-router-dom';
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 import Home from '../../Pages/Home';
 import About from '../../Pages/About';
 
-function Router({ onNavigate, onParentNavigate }) {
-  // const history = useHistory();
-  //
-  // useEffect(() => {
-  //   const unListen = history.listen((location, action) => {
-  //     onNavigate(location.pathname + location.search);
-  //   });
-  //
-  //   return () => {
-  //     unListen();
-  //   }
-  // }, []);
+function Router() {
 
   return (<Switch>
     <Route path="/home">

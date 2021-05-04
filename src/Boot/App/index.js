@@ -1,13 +1,15 @@
 import React from 'react';
-import { Router as MemoryRouter } from 'react-router-dom';
+import { Router as ReactRouter } from 'react-router-dom';
 import Router from '../Router';
 import Header from '../../Components/Header';
 
-function App({ history, onNavigate, initialPath = "/" }) {
-  return (<MemoryRouter history={history}>
+function App({ history }) {
+  return (
+    <ReactRouter history={history}>
       <Header />
-      <Router onNavigate={onNavigate} />
-    </MemoryRouter>);
+      <Router />
+    </ReactRouter>
+  );
 }
 
 export default App;

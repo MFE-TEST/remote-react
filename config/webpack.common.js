@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
+const webpack = require('webpack');
 
 module.exports = {
   devtool: 'source-map',
@@ -95,5 +96,8 @@ module.exports = {
       //   }
       // },
     }),
+    new webpack.DefinePlugin({
+      'BASE_NAME': JSON.stringify(process.env.BASE_NAME || "/"),
+    })
   ],
 };
