@@ -31,7 +31,7 @@ jobs:
           npm install
           npm run build
         env:
-          BASE_NAME: '/remote-react'
+          BASE_NAME: '/remote-react/'
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
